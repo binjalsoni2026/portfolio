@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binjal Soni</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    
+
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <a href="index.html" class="flex items-center py-4 px-2 text-gray-700 hover:text-gray-900">
-                        <span class="font-semibold text-lg">HOME</span>
-                    </a>
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900 font-semibold text-lg">HOME</a>
                 </div>
-                <div class="flex items-center space-x-1">
-                    <a href="about.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">About</a>
-                    <a href="experience.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Experience</a>
-                    <a href="skills.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Skills</a>
-                    <a href="projects.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Projects</a>
-                    <a href="achievements.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Achievements</a>
-                    <a href="contact.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Contact</a>
+                <div class="hidden md:flex items-center space-x-7">
+                    <a href="about.html" class="text-gray-700 hover:text-gray-900">About</a>
+                    <a href="experience.html" class="text-gray-700 hover:text-gray-900">Experience</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-gray-900">Skills</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-gray-900">Projects</a>
+                    <a href="achievements.html" class="text-gray-700 hover:text-gray-900">Achievements</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
+        </div>
+        <!-- Mobile Menu Items (Initially Hidden) -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <a href="about.html"
+                class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">About</a>
+            <a href="experience.html"
+                class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Experience</a>
+            <a href="skills.html"
+                class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Skills</a>
+            <a href="projects.html"
+                class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Projects</a>
+            <a href="achievements.html"
+                class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Achievements</a>
+            <a href="contact.html"
+                class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Contact</a>
         </div>
     </nav>
 
@@ -37,23 +61,27 @@
                 <div class="bg-white p-6 shadow-lg rounded-lg">
                     <h3 class="text-xl font-bold">Published Papers</h3>
                     <ul class="mt-2 text-gray-600 list-disc list-inside">
-                        <li>Published a paper on “A Hybrid model for Fake News Detection Using Clickbait: An Incremental Approach” at the ANTIC-2022 conference. 23rd December, 2022</li>
-                        <li>Published a paper on “Fake News Detection using Different Statistical Models with and without Clickbait” at the ICCMSE-2023 conference. 15th December, 2023</li>
-                        <li>Published a paper on “Optimizing the Parameters of Fluidized Bed Dryer” at the IEEE I2CT-2024 conference. 2024</li>
-                        <li>Presented a poster on “Text Summarization and Multilingual Text to Audio Translation using Deep Learning Models” at the IGNITE Event of IEEE.</li>
+                        <li>Published a paper on “A Hybrid model for Fake News Detection Using Clickbait: An Incremental
+                            Approach” at the ANTIC-2022 conference. 23rd December, 2022</li>
+                        <li>Published a paper on “Fake News Detection using Different Statistical Models with and without
+                            Clickbait” at the ICCMSE-2023 conference. 15th December, 2023</li>
+                        <li>Published a paper on “Optimizing the Parameters of Fluidized Bed Dryer” at the IEEE I2CT-2024
+                            conference. 2024</li>
+                        <li>Presented a poster on “Text Summarization and Multilingual Text to Audio Translation using
+                            Deep Learning Models” at the IGNITE Event of IEEE.</li>
                     </ul>
                 </div>
-            </div>
-            <div class="bg-white p-6 shadow-lg rounded-lg">
-                <h3 class="text-xl font-bold">Certifications & Workshops</h3>
-                <ul class="mt-2 text-gray-600 list-disc list-inside">
-                    <li>Udemy Python best parts: Standard Library</li>
-                    <li>NVIDIA Fundamentals of Deep Learning</li>
-                    <li>DeepLeaning.AI Supervised Machine Learning: Regression and Classification</li>
-                    <li>GeeksForGeeks Generative AI and Python Workshop</li>
-                    <li>IGNITE Event of IEEE Certified for presenting a poster in the event</li>
-                    <li>GeeksForGeeks AWS Workshop</li>
-                </ul>
+                <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-bold">Certifications & Workshops</h3>
+                    <ul class="mt-2 text-gray-600 list-disc list-inside">
+                        <li>Udemy Python best parts: Standard Library</li>
+                        <li>NVIDIA Fundamentals of Deep Learning</li>
+                        <li>DeepLeaning.AI Supervised Machine Learning: Regression and Classification</li>
+                        <li>GeeksForGeeks Generative AI and Python Workshop</li>
+                        <li>IGNITE Event of IEEE Certified for presenting a poster in the event</li>
+                        <li>GeeksForGeeks AWS Workshop</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -64,7 +92,20 @@
             <p>&copy; 2024 Binjal Soni. All rights reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
-</body>
-</html>
 
+    <!-- JavaScript to toggle menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

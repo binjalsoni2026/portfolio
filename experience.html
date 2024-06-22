@@ -11,48 +11,56 @@
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <a href="index.html" class="flex items-center py-4 px-2 text-gray-700 hover:text-gray-900">
-                        <span class="font-semibold text-lg">HOME</span>
-                    </a>
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900 font-semibold text-lg">HOME</a>
                 </div>
-                <div class="flex items-center space-x-1">
-                    <a href="about.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">About</a>
-                    <a href="experience.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Experience</a>
-                    <a href="skills.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Skills</a>
-                    <a href="projects.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Projects</a>
-                    <a href="achievements.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Achievements</a>
-                    <a href="contact.html" class="py-4 px-2 text-gray-700 hover:text-gray-900">Contact</a>
+                <div class="hidden md:flex items-center space-x-7">
+                    <a href="about.html" class="text-gray-700 hover:text-gray-900">About</a>
+                    <a href="experience.html" class="text-gray-700 hover:text-gray-900">Experience</a>
+                    <a href="skills.html" class="text-gray-700 hover:text-gray-900">Skills</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-gray-900">Projects</a>
+                    <a href="achievements.html" class="text-gray-700 hover:text-gray-900">Achievements</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
+        </div>
+        <!-- Mobile Menu Items (Initially Hidden) -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <a href="about.html" class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">About</a>
+            <a href="experience.html" class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Experience</a>
+            <a href="skills.html" class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Skills</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Projects</a>
+            <a href="achievements.html" class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Achievements</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900">Contact</a>
         </div>
     </nav>
 
     <!-- Experience Section -->
-    <section id="experience" class="bg-gray-100 py-20">
+    <section id="experience" class="py-20">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold">Experience</h2>
-            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <h2 class="text-3xl font-bold mb-10">Experience</h2>
+            <div class="grid gap-10 lg:grid-cols-2">
                 <div class="bg-white p-6 shadow-lg rounded-lg">
-                    <h3 class="text-2xl font-bold">Data Science Intern</h3>
-                    <p class="mt-2 text-gray-600">Zydus Life Sciences, Ahmedabad</p>
-                    <p class="mt-2 text-gray-600">June 2023 - April 2024</p>
-                    <p class="mt-4 text-gray-600 text-justify">During my internship, I leveraged predictive modeling techniques to optimize operational parameters of pharmaceutical machinery such as 
-                        FBD, HSMG, and GCM. Additionally, I developed "Document Assist," an AI chatbot for document interactions in English audio, and 
-                        spearheaded "DMAR," a real-time Min/Max CPP report system for machinery and batch comparisons. These initiatives aimed to enhance 
-                        user accessibility and facilitate data-driven decision-making in pharmaceutical manufacturing processes. By analyzing historical data and 
-                        employing machine learning algorithms, the goal was to predict optimal settings for factors like temperature, pressure, and speed, ultimately 
-                        improving production efficiency, reducing batch time, and maintaining stringent quality standards.</p>
+                    <h3 class="text-xl font-semibold mb-2">Data Science Intern</h3>
+                    <p class="text-gray-600">Zydus Life Sciences, Ahmedabad</p>
+                    <p class="text-gray-600">June 2023 - April 2024</p>
+                    <p class="mt-4 text-gray-600 leading-relaxed text-justify">During my internship, I leveraged predictive modeling techniques to optimize operational parameters of pharmaceutical machinery such as FBD, HSMG, and GCM. Additionally, I developed "Document Assist," an AI chatbot for document interactions in English audio, and spearheaded "DMAR," a real-time Min/Max CPP report system for machinery and batch comparisons. These initiatives aimed to enhance user accessibility and facilitate data-driven decision-making in pharmaceutical manufacturing processes. By analyzing historical data and employing machine learning algorithms, the goal was to predict optimal settings for factors like temperature, pressure, and speed, ultimately improving production efficiency, reducing batch time, and maintaining stringent quality standards.</p>
                 </div>
                 <div class="bg-white p-6 shadow-lg rounded-lg">
-                    <h3 class="text-2xl font-bold">Quality Assurance Engineer</h3>
-                    <p class="mt-2 text-gray-600">Tax Tech India Private Limited, Gandhinagar</p>
-                    <p class="mt-2 text-gray-600">March 2022 - August 2022</p>
-                    <p class="mt-4 text-gray-600 text-justify">During my time at TTI as a Quality Engineer, I learned a lot about checking software by hand and understanding the important
-                        steps for making sure it works well. I got to practice a lot by actually testing software myself and following clear steps to make sure
-                        it was good enough for use. It was all about making sure the software worked right and didn't have any problems when people used
-                        it.</p>
+                    <h3 class="text-xl font-semibold mb-2">Quality Assurance Engineer</h3>
+                    <p class="text-gray-600">Tax Tech India Private Limited, Gandhinagar</p>
+                    <p class="text-gray-600">March 2022 - August 2022</p>
+                    <p class="mt-4 text-gray-600 leading-relaxed text-justify">During my time at TTI as a Quality Engineer, I learned a lot about checking software by hand and understanding the important steps for making sure it works well. I got to practice a lot by actually testing software myself and following clear steps to make sure it was good enough for use. It was all about making sure the software worked right and didn't have any problems when people used it.</p>
                 </div>
             </div>
         </div>
@@ -64,7 +72,19 @@
             <p>&copy; 2024 Binjal Soni. All rights reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- JavaScript to toggle menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
-
